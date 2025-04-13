@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.btn-contacto {
+  background-color: v.$primary-color;
+  color: v.$white;
+  border-radius: 8px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: v.$secondary-color;
+    color: v.$primary-color;
+  }
+
+  @include m.respond-to('mobile') {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

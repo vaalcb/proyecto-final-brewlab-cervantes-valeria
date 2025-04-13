@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.navbar {
+    padding: v.$navbar-padding;
+  
+    .logo {
+      width: 180px;
+    }
+  
+    .custom-toggler {
+      border: none;
+      background-color: transparent;
+  
+      &:focus {
+        box-shadow: none;
+      }
+  
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(108,26,64)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: v.$black;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 8px 15px;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: v.$primary-color;
+          font-weight: bold;
+        }
+      }
+    }
+  
+    @include m.respond-to('mobile') {
+        .navbar-nav {
+          text-align: center;
+          padding-top: 10px;
+          
+          .nav-item {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    

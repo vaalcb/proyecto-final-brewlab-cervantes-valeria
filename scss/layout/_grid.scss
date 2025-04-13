@@ -1,0 +1,48 @@
+.div-container {
+    background-color: $white;
+    @include grid-layout(1fr 1fr);
+  
+    p {
+      text-align: left;
+    }
+  
+    @include mobile {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 20px;
+      padding: 20px;
+  
+      .div-img {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .div-container-blue {
+    background-color: $secondary-color;
+    @include grid-layout(1fr 1fr);
+    gap: 69px;
+    margin-bottom: 56px;
+  
+    @include mobile {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+  
+  .div-container-white {
+    background-color: $white;
+    @include grid-layout(1fr 1fr);
+    gap: 69px;
+    margin: 48px 0 56px;
+  
+    @include mobile {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 20px;
+      padding: 20px;
+    }
+  }

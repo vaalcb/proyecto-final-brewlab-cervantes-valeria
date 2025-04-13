@@ -1,0 +1,99 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 56px 0 5%;
+    gap: 24px;
+  }
+  
+  .div-subtitulo-blue {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 24px;
+    @include m.flex-center;
+  
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  
+  .div-content-blue p {
+    color: $primary-color;
+  }
+  
+  .div-img {
+    width: 100%;
+    max-width: 483px;
+    height: auto;
+    @include m.flex-center;
+  }
+  
+  .section-menu {
+    background: $primary-color;
+    width: auto;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 50px;
+    color: $white;
+  }
+  
+  .div-section-title-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 24px 50px;
+  
+    @include mobile {
+      align-items: center;
+    }
+  }
+  
+  .card-container-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    padding: 24px 50px;
+  }
+  
+  .div-list-blue {
+    margin-top: 24px;
+  
+    h4 {
+      color: $primary-color;
+      font-size: 20px;
+      gap: 24px;
+    }
+  
+    p {
+      text-align: left;
+  
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+  
+  .list-white {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  
+    p {
+      color: $primary-color;
+    }
+  
+    @include mobile {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
